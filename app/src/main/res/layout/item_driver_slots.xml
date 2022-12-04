@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvSlotTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_6sdp"
+    android:layout_margin="@dimen/_4sdp"
+    android:layout_weight="1"
+    android:textSize="@dimen/_12sdp"
+    android:background="@null"
+    android:fontFamily="@font/sf_pro_display_regular"
+    android:gravity="center"
+    android:text="09:00"
+    android:textColor="@color/app_black" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    android:id="@+id/rbCancelReason"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/app_black"
+    android:buttonTint="@color/app_black"
+    android:textSize="@dimen/_13sdp">
+
+</RadioButton>

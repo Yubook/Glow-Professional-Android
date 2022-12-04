@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.select_services.SelectServicesActivity">
+
+    <RelativeLayout
+        android:id="@+id/relToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_pink"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/ivBackButton"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@color/black" />
+
+        <TextView
+
+            android:id="@+id/tvToolbarTitle"
+            style="@style/HeadingType2BlackFont"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:text="@string/select_your_services"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16sdp"
+        android:layout_below="@+id/relToolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serviceRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_select_services" />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            style="@style/BookAppointmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/drawable_dark_grey_rounded_corner_bg"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/continue_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

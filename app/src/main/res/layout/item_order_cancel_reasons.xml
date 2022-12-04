@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_radio_unselected"/>
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/ivRadio"
+            android:padding="@dimen/_4sdp"
+            android:text="Other"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+
+    <RadioButton
+        android:id="@+id/rbCancelReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_black"
+        android:buttonTint="@color/app_black"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone"
+        android:checked="false"
+        android:text="Other"/>
+
+    <EditText
+        android:id="@+id/edtOtherReason"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_below="@+id/rel"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/drawable_grey_rounded_corner_bg"
+        android:gravity="start"
+        android:hint="@string/comment"
+        android:padding="@dimen/_8sdp"
+        android:visibility="visible" />
+
+</RelativeLayout>

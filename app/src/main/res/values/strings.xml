@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">GlowDriver</string>
+    <string name="fade">GLOW</string>
+    <string name="title_activity_get_started">GetStartedActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="by_clicking_start_you_agree_to_our">By clicking start, you agree to our</string>
+    <string name="terms"><u>Terms</u></string>
+    <string name="and">and</string>
+    <string name="privacy"><u>Privacy</u></string>
+    <string name="get_started">Get Started</string>
+    <string name="mobile_van_barber_shop_directly_to_your_location">Mobile Van Barber Shop,\nDirectly to your location</string>
+
+    <string name="find_and_book_barber_services_near_you">Find and Book Barber Services Near You!!</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="verify_phone_number_heading">By continuing, you may receive\nSMS to verify your number. Message and data\nrates may apply.</string>
+    <string name="log_in">Log In</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register_or_login">Register or Login</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="enter_your_otp_code_here">Enter your OTP code here</string>
+    <string name="didn_t_you_received_any_code">Didn\'t you received any code?</string>
+    <string name="resend_code">Resend Code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_and_book_best_services">Find and book best services</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="bookings">Bookings</string>
+    <string name="subscription">Subscriptions</string>
+    <string name="wallet">Wallet</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="address">Address</string>
+    <string name="your_booking_location">Your Booking Location</string>
+    <string name="enable_your_location">Enable Your Location</string>
+    <string name="enable_your_location_description">Please enable your location so the  barber can find you. Also you can share your  location with your barber.</string>
+    <string name="agree">Agree</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="take_the_deal">Take the Deal</string>
+    <string name="cancel">Cancel</string>
+    <string name="pound_sign">£</string>
+    <string name="message">Message</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="booked_service">Booked Service :</string>
+    <string name="total">Total : </string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="booking_history">Booking History</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="payment_history">Payment History</string>
+    <string name="add_review">Add Review</string>
+    <string name="appointment">Appointment</string>
+    <string name="select_time_to_slot_to_visit">Select time to slot to visit</string>
+    <string name="slots_available">Slots Available</string>
+    <string name="request_to_book_an_appointment">Request to Book an Appointment</string>
+    <string name="select_services">Select Services</string>
+    <string name="confirm">Confirm</string>
+    <string name="ratings">Ratings</string>
+    <string name="enter_your_comment">Enter Your Comment</string>
+    <string name="add_photos_optional">Add Photos (Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="reviews">Reviews</string>
+    <string name="all_reviews">All Reviews</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.
+    </string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="we_protect_your_personal_information">We Protect Your Personal Information</string>
+    <string name="card_details">Card Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="secure_payment">Secure Payment</string>
+    <string name="powered_by_stripe">Powered By Stripe</string>
+    <string name="payment_screen_desc">By Proceeding with this booking you are accepting our Booking and Cancellation Terms</string>
+    <string name="continue_text">Continue</string>
+    <string name="done">Done</string>
+    <string name="err_empty_phone_number">Please Enter Mobile Number</string>
+    <string name="notification">Notification</string>
+    <string name="are_you_sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="err_valid_phone_number">Please enter valid mobile number</string>
+    <string name="title_activity_get_location">Map</string>
+    <string name="wallet_balance">Wallet Balance : </string>
+    <string name="available_discount">Available Discount :</string>
+    <string name="place_api_key">AIzaSyC7kiVlXV3vw-HjT_9UmKEoJ5su1KXJrBA</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="van_number">Van Number</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="your_location">Your Location</string>
+    <string name="revenue">Revenue</string>
+    <string name="select_your_services">Select Your Services</string>
+    <string name="your_availability">Your Availability</string>
+    <string name="morning_availability">Morning Availability</string>
+    <string name="afternoon_availability">Afternoon Availability</string>
+    <string name="evening_availability">Evening Availability</string>
+    <string name="select_radius">Your Working Radius</string>
+    <string name="_1mi">1mi</string>
+    <string name="_7mi">7mi</string>
+    <string name="_15mi">15mi</string>
+    <string name="empty_time_slots">Please select at least 1 time slot</string>
+    <string name="empty_barber_date">Please select at least 1 date</string>
+    <string name="availability_added_msg">Your availability added successfully!</string>
+    <string name="barber_radius_added_success_msg">Your work radius submitted successfully done!</string>
+    <string name="edt_profile">Edit Profile</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="empty_name">Please enter name</string>
+    <string name="error_empty_email">Please enter valid email id</string>
+    <string name="error_empty_address">Please enter address</string>
+    <string name="your_terms_amp_conditions"><![CDATA[Your Terms & Conditions]]></string>
+    <string name="terms_update_success_msg">Your Terms Updated Successfully done!</string>
+    <string name="error_empty_terms_condition">Please enter your terms and condition</string>
+    <string name="edit_services">Edit Services</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="price">Price</string>
+    <string name="remove">Remove</string>
+    <string name="remove_service">Remove Service</string>
+    <string name="enable_service_dialog_desc">You can temporary remove your service and if you want you can later make service enable.</string>
+    <string name="edit_service">Edit Service</string>
+    <string name="photos">Photos</string>
+    <string name="value">Value</string>
+    <string name="no_image_found">No Image Found</string>
+    <string name="availability">Availability</string>
+    <string name="please_select_any_reason">Please select any reason</string>
+    <string name="please_add_reason">Please add reason</string>
+    <string name="comment">Comment</string>
+    <string name="whoops">Whoops!</string>
+    <string name="no_internet_layout_desc">There seems to be a problem with you Network Connection</string>
+    <string name="no_internet_connection">Oops! No Internet Connection!</string>
+    <string name="try_again">Try Again</string>
+    <string name="edit_radius">Edit Radius</string>
+    <string name="your_portfolio">Your Portfolio</string>
+    <string name="user_s_review">User\'s Review</string>
+    <string name="barber_name">Barber Name*</string>
+    <string name="barber_id">Barber ID*</string>
+    <string name="error_empty_address_line_1">Please enter address line 1</string>
+    <string name="Login_screen_texts">Do what you love and start earning\nfrom today!</string>
+    <string name="glow_get_started_text">Glow is the essence of beauty</string>
+    <string-array name="calender_day_label">
+        <item>Mo</item>
+        <item>Tu</item>
+        <item>We</item>
+        <item>Th</item>
+        <item>Fr</item>
+        <item>Sa</item>
+        <item>Su</item>
+    </string-array>
+</resources>

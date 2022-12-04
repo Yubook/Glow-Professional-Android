@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_bottom_rounded_black_corner"
+                android:paddingBottom="@dimen/_24sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp">
+
+                    <ImageView
+                        android:id="@+id/ivBackButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/_6sdp"
+                        android:src="@drawable/ic_back_arrow"
+                        app:tint="@color/app_black" />
+
+                    <TextView
+                        android:id="@+id/tvToolbarTitle"
+                        style="@style/HeadingType2BlackFont"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/profile"
+                        android:textColor="@color/app_black"
+                        android:textSize="@dimen/_16sdp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relToolBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_8sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivUserProfile"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        app:civ_border_color="@color/white"
+                        android:visibility="gone"
+                        app:civ_border_width="@dimen/_2sdp" />
+
+                    <ImageView
+                        android:id="@+id/ivUserAddProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rounded_white_border_bg"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_23sdp"
+                        android:src="@drawable/ic_camera"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvDriverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relProfile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textColor="@color/app_black"
+                    android:textSize="@dimen/_18sdp"
+                    android:visibility="gone"
+                    tools:text="Jerry Waelchi" />
+
+                <TextView
+                    android:id="@+id/tvDriverEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDriverName"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="Jerry Waelchi"
+                    android:textColor="@color/app_black"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relTop"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/barber_name"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/app_black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_user"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/custom_black_cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/edtVanNumber"
+                    style="@style/BoxEditText"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:drawableEnd="@drawable/ic_van"
+                    android:drawableTint="@color/app_black"
+                    android:hint="@string/van_number"
+                    android:visibility="gone" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputAddress1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Address Line1*"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/app_black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_address_pin"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/custom_black_cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputAddress2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Address Line2"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/app_black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_address_pin"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/custom_black_cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPostalCode"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Postal Code"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/app_black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPostalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_postal_code"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/custom_black_cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/drawable_rounded_corner_border_black"
+                    android:paddingVertical="@dimen/_3sdp">
+
+                    <Spinner
+                        android:id="@+id/spnState"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp" />
+
+                </LinearLayout>
+-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/drawable_rounded_corner_border_black"
+                    android:paddingVertical="@dimen/_3sdp">
+
+                    <Spinner
+                        android:id="@+id/spnCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:background="@drawable/drawable_rounded_corner_border_black"
+                    android:padding="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/tvCountryCode"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toEndOf="@+id/tvCountryCode"
+                        android:background="@color/app_black"
+                        android:paddingBottom="@dimen/_4sdp" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_toEndOf="@+id/view"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_phone"
+                        android:enabled="false"
+                        android:hint="@string/mobile_number"
+                        android:inputType="phone"
+                        android:padding="@dimen/_8sdp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmailAddress"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="@string/email_id"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/app_black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmailAddress"
+                        style="@style/BoxEditText"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@null"
+                        android:drawableEnd="@drawable/ic_email"
+                        android:enabled="true"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:text="@string/gender"
+                        android:textColor="@color/app_black"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="visible" />
+
+                    <RadioGroup
+                        android:id="@+id/rgGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toEndOf="@+id/tvGender"
+                        android:labelFor="@+id/edtEmailAddress"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RadioButton
+                            android:id="@+id/rbMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/male"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="@string/female"
+                            android:textSize="@dimen/_12sdp" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputBarberId"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                            android:focusable="false"
+                            android:enabled="false"
+                            app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                            app:hintTextColor="@color/app_black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBarberIdName"
+                                style="@style/BoxEditText"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:background="@null"
+                                android:enabled="true"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:text="Proof of ID"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_10sdp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/barberIdPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:background="@drawable/drawable_grey_rounded_corner_bg">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_camera"
+                                app:tint="@color/black" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/ivBarberIdPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY" />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputBarberProof"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:focusable="false"
+                            android:enabled="false"
+                            app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                            app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                            app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                            app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                            app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                            app:hintTextColor="@color/app_black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtBarberProofName"
+                                style="@style/BoxEditText"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:text="Proof of Address"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/_10sdp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/barberProofPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:background="@drawable/drawable_grey_rounded_corner_bg">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_camera"
+                                app:tint="@color/black" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_70sdp"
+                                android:backgroundTint="@android:color/transparent"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/ivBarberProofPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvEditProfile"
+                    style="@style/MainBlackRoundedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:paddingStart="@dimen/_32sdp"
+                    android:paddingEnd="@dimen/_32sdp"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/app_black"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/app_black"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

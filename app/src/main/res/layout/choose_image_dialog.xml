@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCaptureImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/app_black"
+        android:padding="@dimen/_8sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"></View>
+
+    <TextView
+        android:id="@+id/tvUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/app_black"
+        android:padding="@dimen/_8sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"></View>
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:textSize="@dimen/_14sdp"
+        android:padding="@dimen/_8sdp"/>
+
+</LinearLayout>

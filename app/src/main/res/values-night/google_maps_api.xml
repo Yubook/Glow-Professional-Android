@@ -1,0 +1,28 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=25:E2:79:2D:DB:92:61:15:07:7C:6F:70:67:D5:1A:7A:46:31:DF:B8%3Bcom.glow.driver.ui
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.glow.driver.ui
+
+    SHA-1 certificate fingerprint:
+    25:E2:79:2D:DB:92:61:15:07:7C:6F:70:67:D5:1A:7A:46:31:DF:B8
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <!--working old-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCEjqjvpGrAIxFp_QKnp5jfc8h7xFUwhxM</string>
+
+    <!--new for testing-->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBpfouadqHZyYkHH3sw6GpaDaGpXhLIv9Y</string>-->
+</resources>

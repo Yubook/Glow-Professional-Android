@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.login.LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".VerifyPhoneNumberActivity">
+
+            <RelativeLayout
+                android:id="@+id/relToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivBackButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:id="@+id/tvToolbarTitle"
+                    style="@style/HeadingType2BlackFont"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/verify_phone_number"
+                    android:textSize="@dimen/_16sdp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivLoginImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_login_img" />
+
+            <RelativeLayout
+
+                android:id="@+id/relPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLoginImage"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:background="@drawable/drawable_rounded_corner_border_black"
+                android:padding="@dimen/_2sdp">
+
+                <Spinner
+                    android:id="@+id/spnCity"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:id="@+id/linSelectCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/ivCountryFlag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="@dimen/_8sdp" />
+
+                    <TextView
+                        android:id="@+id/tvCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:spinnerMode="dropdown"
+                        android:text="Item 1"
+                        android:textColor="@color/app_black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/linSelectCountry"
+                    android:background="@color/app_black"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp" />
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@null"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/_8sdp"
+                    android:textColorHint="@color/gray" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/HeadingType2BlackFont"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/relPhoneNumber"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:gravity="center"
+                android:text="@string/Login_screen_texts"
+                android:textSize="@dimen/_16sdp" />
+
+            <RelativeLayout
+                android:id="@+id/relGetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/ripple_effect">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvRegisterOrLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:padding="@dimen/_12sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="@string/register_or_login"
+                        android:textColor="@color/app_black"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_arrow_next" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

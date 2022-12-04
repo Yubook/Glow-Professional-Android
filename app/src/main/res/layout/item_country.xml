@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/linFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tvFlag"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            tools:text="India" />
+
+        <TextView
+            android:id="@+id/tvCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/tvCountry"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textColor="@color/chart_line_color"
+            android:textSize="@dimen/_13sdp"
+            tools:text="+91" />
+
+        <ImageView
+            android:id="@+id/ivCheckMark"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_6sdp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:src="@drawable/ic_check_mark" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linFlag"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:background="@color/gray" />
+
+</RelativeLayout>

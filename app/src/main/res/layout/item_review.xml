@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:padding="@dimen/_2sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivDriverImage"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_dummy_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivDriverImage"
+        android:layout_alignBottom="@+id/ivDriverImage"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_toEndOf="@+id/ivDriverImage"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDriverName"
+            style="@style/HeadingType2BlackFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robert Mark"
+            android:textSize="@dimen/_13sdp" />
+
+        <RatingBar
+            android:id="@+id/driverReviewRatingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDriverName"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:isIndicator="true"
+            android:progressBackgroundTint="@color/unselected_rating_color"
+            android:progressTint="@color/app_black"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/tvReviewTime"
+            style="@style/HeadingType2BlackFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/allReview"
+            android:layout_alignBottom="@+id/driverReviewRatingBar"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textColor="@color/unselected_rating_color"
+            android:textSize="@dimen/_10sdp"
+            tools:text="Review Date time" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvReviewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivDriverImage"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        tools:text="@string/dummy_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReviewDescription"
+        android:layout_marginTop="@dimen/_6sdp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageRecyclerView"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/gray" />
+
+
+</RelativeLayout>

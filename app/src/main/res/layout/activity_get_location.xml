@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.get_location.GetLocationActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.get_location.GetLocationActivity" />
+
+    <ImageView
+        android:id="@+id/ivMapLocationPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_location_pin_big" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginStart="4dp"
+            android:layout_toStartOf="@+id/ivClear"
+            android:drawableStart="@drawable/ic_search"
+            android:background="@null"
+            android:drawablePadding="@dimen/_4sdp"
+            android:drawableTint="@color/app_black"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/_14sdp"
+            tools:text="location" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_toStartOf="@+id/tvCancel"
+            app:tint="@color/app_black"
+            android:padding="@dimen/_4sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close_24"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDone"
+        style="@style/MainBlackRoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingEnd="@dimen/_32sdp"
+        android:text="@string/done"
+        android:textAllCaps="true"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

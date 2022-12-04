@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:id="@+id/relService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ivServiceDelete"
+        android:background="@drawable/service_unselected_bg">
+
+        <TextView
+            android:id="@+id/tvServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/relPrice"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_14sdp"
+            android:textColor="@color/unselected_rating_color"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Haircut" />
+
+        <LinearLayout
+            android:id="@+id/relPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edtServicePrice"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/app_black"
+                tools:text="1234567" />
+
+            <View
+                android:id="@+id/priceBottomLine"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/app_black" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivServiceDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_12sdp"
+        app:tint="@color/black"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+</RelativeLayout>

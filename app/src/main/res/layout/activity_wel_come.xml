@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_black"
+    tools:context=".ui.welcome.WelComeActivity">
+
+    <ImageView
+        android:id="@+id/ivWelCome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_welcome_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/drawable_top_rounded_corner_white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/HeadingType2BlackFont"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/welcome_to"
+            android:textStyle="bold"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tvToolbarSubTitle"
+            style="@style/HeadingType2BlackFont"
+            android:layout_below="@+id/tvToolbarTitle"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/fade"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/_32sdp" />
+
+        <TextView
+            android:id="@+id/tvText"
+            style="@style/HeadingType2BlackFont"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="Find and Book Mobile Barber \nServices Near You!!"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_below="@+id/tvToolbarSubTitle"
+            android:textColor="@color/app_black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:textColor="@color/app_black"
+            style="@style/MainBlackRoundedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvText"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/drawable_black_rounded_corner_bg"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/log_in"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
